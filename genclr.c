@@ -284,13 +284,13 @@ int main (int argc, char **argv)
 #include <curses.h>\n\
 #include <stdio.h>\n\
 #include <stdlib.h>\n\
-
+\
 #include \"%s\"\n\
-
+\
 void clrgen_init (void)\n\
 ""{\n\
     if (%d > COLOR_PAIRS - 1) {\n\
-	endwin();
+	endwin();\
 	fputs (\"Too many color pairs!\\n\", stderr);\n\
 	exit (1);\n\
     }\n\
